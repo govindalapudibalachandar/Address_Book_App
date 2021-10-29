@@ -8,8 +8,8 @@
     <title>Address Book form</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600&display=swap">
     <link rel="stylesheet" href="/css/style.css">
-    
-    
+
+
 </head>
 
 <body>
@@ -23,14 +23,16 @@
             </div>
         </div>
     </header>
-            <!-- UC2 -->
-            <div id="formId" class="form-content">
-                <form action="#" class="form" onreset="resetForm()" onsubmit="save()">
-                    <div class="form-head">
-                       <span><img src="/assets/cancelButton.jpgg" class="cancelimage" onclick="cancelform"> <h3 class="text-heading">PERSON ADDRESS FORM </h3></span>       
-                    </div>
-                    <!---uc3 ability to add input field to form-->
-                    
+    <!-- UC2 -->
+    <div id="formId" class="form-content">
+        <form action="#" class="form" onreset="resetForm()" onsubmit="save()">
+            <div class="form-head">
+                <span><img src="/assets/cancelButton.jpgg" class="cancelimage" onclick="cancelform">
+                    <h3 class="text-heading">PERSON ADDRESS FORM </h3>
+                </span>
+            </div>
+            <!---uc3 ability to add input field to form-->
+
             <div class="row-content">
                 <label for="text" class="label text">full name:</label>
             </div>
@@ -43,9 +45,9 @@
                 <label for="tel" class="label text">phone number</label>
             </div>
             <div class="row-content">
-                <input type="text" class="input" name="tel" id="tel" phone number="phone number" placeholder="Your Number..."
-                    required>
-                    <error-output class="tel-error" for="tel"></error-output> 
+                <input type="text" class="input" name="tel" id="tel" phone number="phone number"
+                    placeholder="Your Number..." required>
+                <error-output class="tel-error" for="tel"></error-output>
             </div>
             <div class="row-content">
                 <label for="notes" class="label text">address</label>
@@ -66,7 +68,7 @@
                             <label>Zip Code</label>
                         </td>
                     </tr>
-                    <tr >
+                    <tr>
                         <td>
                             <select name="Day" id="city">
                                 <option value="1">select city</option>
@@ -95,8 +97,18 @@
 
                     <tr>
                         <td></td>
+                        <td>
+                            <button type="add" class="AddButton">Add</button>
+                        </td>
+                        <td>
+
+                            <button type="reset" class="resetButton">Reset</button>
+                        </td>
+                    </tr>
+                </table>
+            </div><br>
         </form>
         <script src="../js/addressbook_form.js"></script>
 </body>
-</html>
 
+</html>
