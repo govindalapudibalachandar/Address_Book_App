@@ -29,8 +29,72 @@
                     <div class="form-head">
                        <span><img src="/assets/cancelButton.jpgg" class="cancelimage" onclick="cancelform"> <h3 class="text-heading">PERSON ADDRESS FORM </h3></span>       
                     </div>
-        
+                    <!---uc3 ability to add input field to form-->
+                    
+            <div class="row-content">
+                <label for="text" class="label text">full name:</label>
+            </div>
+            <div class="row-content">
+                <input type="text" class="input" id="text" name="text" placeholder="Enter your Name..." required>
+                <error-output class="text-error" for="name"></error-output>
+            </div>
 
+            <div class="row-content">
+                <label for="tel" class="label text">phone number</label>
+            </div>
+            <div class="row-content">
+                <input type="text" class="input" name="tel" id="tel" phone number="phone number" placeholder="Your Number..."
+                    required>
+                    <error-output class="tel-error" for="tel"></error-output> 
+            </div>
+            <div class="row-content">
+                <label for="notes" class="label text">address</label>
+            </div>
+            <div class="row-content">
+                <textarea name="Notes" id="notes" placeholder="" class="input" style="height: 100px;"></textarea>
+            </div>
+            <div class="row-content">
+                <table class="table-prop" width="1500px">
+                    <tr>
+                        <td style="width:33%">
+                            <label>City</label>
+                        </td>
+                        <td style="width:33%">
+                            <label>State</label>
+                        </td>
+                        <td style="width:33%">
+                            <label>Zip Code</label>
+                        </td>
+                    </tr>
+                    <tr >
+                        <td>
+                            <select name="Day" id="city">
+                                <option value="1">select city</option>
+                                <option value="2">machilipatanamo</option>
+                                <option value="3">hdyderabad</option>
+                                <option value="4">pune</option>
+                            </select>
+
+
+                        </td>
+                        <td>
+                            <select name="Day" id="state">
+                                <option value="1">select state</option>
+                                <option value="2">ap</option>
+                                <option value="3">ts</option>
+                                <option value="4">pune</option>
+                            </select>
+
+
+                        </td>
+                        <td>
+                            <input type="number">
+                        </td>
+
+                    </tr>
+
+                    <tr>
+                        <td></td>
         </form>
 </div>
 </body>
